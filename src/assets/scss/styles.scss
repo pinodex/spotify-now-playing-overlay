@@ -1,0 +1,44 @@
+$gap: 200px;
+$speed-slow: 150ms !default;
+$speed-slower: 250ms !default;
+
+$primary: #1ed760;
+
+@import 'bulma';
+@import '~buefy/src/scss/components/switch';
+
+html, body {
+  background: transparent;
+  overflow: auto;
+}
+
+.spotify-logo {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.content .image {
+  padding: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all .3s ease;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translate3d(0, 10px, 0);
+  opacity: 0;
+}

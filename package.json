@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "start": "node server.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10",
-    "vue-router": "^3.0.3"
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.7.0",
@@ -21,6 +21,8 @@
     "query-string": "^6.5.0",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
     "vue-template-compiler": "^2.5.21"
   }
 }

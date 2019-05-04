@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "name": "spotify-now-playing-overlay",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "build": {
+    "env": {
+      "VUE_APP_SPOTIFY_CLIENT_ID": "@spotify-client-id"
+    }
+  },
+  "routes": [
+    {
+      "src": "^/js/(.*)",
+      "dest": "/js/$1"
+    },
+    {
+      "src": "^/css/(.*)",
+      "dest": "/css/$1"
+    },
+    {
+      "src": "^/img/(.*)",
+      "dest": "/img/$1"
+    },
+    {
+      "src": ".*",
+      "dest": "/index.html"
+    }
+  ]
+}

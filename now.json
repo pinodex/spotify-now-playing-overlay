@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "spotify-now-playing-overlay",
+  "alias": ["spotify-overlay.raphaelmarco.com"],
   "builds": [
     {
       "src": "package.json",
